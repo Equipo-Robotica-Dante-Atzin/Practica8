@@ -102,7 +102,7 @@ Por último se llevo a cabo la prueba física que resultó de la siguiente forma
 
 En conclusión, esta práctica proporcionó una valiosa oportunidad para profundizarar en la programación y control de un brazo robótico Epson C4, centrándose en la manipulación automatizada de piezas. A lo largo de la actividad, se exploraron conceptos fundamentales como la definición de coordenadas, el uso de la función pallet para organizar movimientos en una matriz, y la implementación de estrategias de simulación para garantizar la efectividad del código.
 
-La decisión de realizar una simulación previa a la prueba física fue clave para asegurar el correcto funcionamiento del programa. Al eliminar las funciones de On y Off, se minimizó el riesgo de errores durante la ejecución, permitiendonos concertrarnos únicamnete en validar las trayectorias del brazo robótico. Este enfoque facilitó la identificación de ajustes necesarios en el código.
+La decisión de realizar una simulación previa a la prueba física fue clave para asegurar el correcto funcionamiento del programa. Al eliminar las funciones de On y Off, se minimizó el riesgo de errores durante la ejecución, permitiendonos concentrarnos únicamnete en validar las trayectorias del brazo robótico. Este enfoque facilitó la identificación de ajustes necesarios en el código.
 
 Durante la prueba física, el brazo robótico demostró su capacidad para recoger y colocar los pistones en las posiciones correctas de la matriz de manera eficiente y precisa. Este resultado positivo subraya la importancia de la planificación meticulosa y la verificación de cada paso del proceso, elementos esenciales en cualquier proyecto de automatización.
 
