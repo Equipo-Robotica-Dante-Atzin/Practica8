@@ -74,11 +74,11 @@ Este código controla el movimiento de un brazo robótico Epson C4 para recoger 
    - `Pallet 0, esq_inf_izq, esq_inf_der, esq_sup_izq, 3, 2`: Define una matriz de 3x2 en la cual el robot colocará los fusibles. Las esquinas de la matriz se especifican con las posiciones *esq_inf_izq* (esquina inferior izquierda), *esq_inf_der* (esquina inferior derecha) y *esq_sup_izq* (esquina superior izquierda).
 
 2. **Ciclo de recolección y colocación**:
-   - Para cada fisible (`fus_1` a `fus_6`):
-     - `Jump3 Here +Z(30), fus_n +Z(200), fus_n`: El robot se desplaza en una trayectoria hacia la posición del fisible, subiendo y luego bajando para recogerlo con precisión.
+   - Para cada fusible (`fus_1` a `fus_6`):
+     - `Jump3 Here +Z(30), fus_n +Z(200), fus_n`: El robot se desplaza en una trayectoria hacia la posición del fusible, subiendo y luego bajando para recogerlo con precisión.
      - `Off 2`: Cierra la pinza.
-     - `Jump3 Here +Z(200), Pallet(0, n) +Z(200), Pallet(0, n)`: Lleva el fisible a su posición en la matriz de destino, usando las coordenadas de *pallet*.
-     - `On 2`: Abre la pinza nuevamente, para recoger el siguiente fisible y soltar el antiguo.
+     - `Jump3 Here +Z(200), Pallet(0, n) +Z(200), Pallet(0, n)`: Lleva el fusible a su posición en la matriz de destino, usando las coordenadas de *pallet*.
+     - `On 2`: Abre la pinza nuevamente, para recoger el siguiente fusible y soltar el antiguo.
 
 3. **Finalización**:
    - Después de colocar todos los fusibles, el robot regresa a su posición inicial con el comando `Home`.
